@@ -1,0 +1,176 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae6bbc263dffee45a6068e3f02a825b, type: 3}
+  m_Name: Preset_SettingsCollection_PP_Layer
+  m_EditorClassIdentifier: 
+  identifier: 
+  settings:
+  - applyImmediately: 1
+    identifier: pp-layer-anti-aliasing-mode
+    expanded: 0
+    overrideIdentifierWhenCopied: 0
+    setting:
+      rid: 7116012322165096693
+    inputElementProviderSettings:
+      rid: 8814626630200984213
+  - applyImmediately: 1
+    identifier: pp-layer-stop-nan-propagation
+    expanded: 0
+    overrideIdentifierWhenCopied: 0
+    setting:
+      rid: 7116012322165096579
+    inputElementProviderSettings:
+      rid: 8814626630200984223
+  - applyImmediately: 1
+    identifier: pp-layer-directly-to-camera
+    expanded: 0
+    overrideIdentifierWhenCopied: 0
+    setting:
+      rid: 7116012322165096582
+    inputElementProviderSettings:
+      rid: 8814626630200984228
+  - applyImmediately: 1
+    identifier: pp-layer-break-before-color-grading
+    expanded: 0
+    overrideIdentifierWhenCopied: 0
+    setting:
+      rid: 7116012322165096583
+    inputElementProviderSettings:
+      rid: 8814626630200984233
+  settingsSaver: {fileID: 0}
+  inputTemplatesUIToolkit: {fileID: 0}
+  inputTemplatesUGUI: {fileID: 0}
+  audioMixer: {fileID: 0}
+  postProcessProfile: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: 7116012322165096579
+      type: {class: Setting_StopNaNPropagation, ns: CitrioN.SettingsMenuCreator.PostProcessing, asm: CitrioN.SettingsMenuCreator.PostProcessing}
+      data:
+        options:
+        - key: True
+          value: True
+        - key: False
+          value: False
+        defaultValue: 1
+        assignUnityValueAsDefault: 0
+        cacheCamera: 0
+        cacheLayer: 0
+    - rid: 7116012322165096582
+      type: {class: Setting_DirectlyToCameraTarget, ns: CitrioN.SettingsMenuCreator.PostProcessing, asm: CitrioN.SettingsMenuCreator.PostProcessing}
+      data:
+        options:
+        - key: True
+          value: True
+        - key: False
+          value: False
+        defaultValue: 0
+        assignUnityValueAsDefault: 0
+        cacheCamera: 0
+        cacheLayer: 0
+    - rid: 7116012322165096583
+      type: {class: Setting_BreakBeforeColorGrading, ns: CitrioN.SettingsMenuCreator.PostProcessing, asm: CitrioN.SettingsMenuCreator.PostProcessing}
+      data:
+        options:
+        - key: True
+          value: True
+        - key: False
+          value: False
+        defaultValue: 1
+        assignUnityValueAsDefault: 0
+        cacheCamera: 0
+        cacheLayer: 0
+    - rid: 7116012322165096693
+      type: {class: Setting_AntiAliasingMode, ns: CitrioN.SettingsMenuCreator.PostProcessing, asm: CitrioN.SettingsMenuCreator.PostProcessing}
+      data:
+        options:
+        - key: None
+          value: Disabled
+        - key: FastApproximateAntialiasing
+          value: Fast Approximate (FXAA)
+        - key: SubpixelMorphologicalAntialiasing
+          value: Subpixel Morphological (SMAA)
+        - key: TemporalAntialiasing
+          value: Temporal (TAA)
+        defaultValue: 0
+        assignUnityValueAsDefault: 0
+        cacheCamera: 0
+        cacheLayer: 0
+    - rid: 8814626630200984213
+      type: {class: InputElementProviderSettings, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data:
+        customLabel: 
+        parentIdentifier: settings-parent
+        addSpacer: 1
+        spacerElementClass: setting-spacer
+        inputElementProvider_UIToolkit:
+          rid: 8814626630200984215
+        inputElementProvider_UGUI:
+          rid: 8814626630200984216
+    - rid: 8814626630200984215
+      type: {class: InputElementProvider_UIT_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 
+    - rid: 8814626630200984216
+      type: {class: InputElementProvider_UGUI_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 
+    - rid: 8814626630200984223
+      type: {class: InputElementProviderSettings, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data:
+        customLabel: 
+        parentIdentifier: settings-parent
+        addSpacer: 1
+        spacerElementClass: setting-spacer
+        inputElementProvider_UIToolkit:
+          rid: 8814626630200984225
+        inputElementProvider_UGUI:
+          rid: 8814626630200984226
+    - rid: 8814626630200984225
+      type: {class: InputElementProvider_UIT_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 
+    - rid: 8814626630200984226
+      type: {class: InputElementProvider_UGUI_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 
+    - rid: 8814626630200984228
+      type: {class: InputElementProviderSettings, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data:
+        customLabel: 
+        parentIdentifier: settings-parent
+        addSpacer: 1
+        spacerElementClass: setting-spacer
+        inputElementProvider_UIToolkit:
+          rid: 8814626630200984230
+        inputElementProvider_UGUI:
+          rid: 8814626630200984231
+    - rid: 8814626630200984230
+      type: {class: InputElementProvider_UIT_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 
+    - rid: 8814626630200984231
+      type: {class: InputElementProvider_UGUI_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 
+    - rid: 8814626630200984233
+      type: {class: InputElementProviderSettings, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data:
+        customLabel: 
+        parentIdentifier: settings-parent
+        addSpacer: 1
+        spacerElementClass: setting-spacer
+        inputElementProvider_UIToolkit:
+          rid: 8814626630200984235
+        inputElementProvider_UGUI:
+          rid: 8814626630200984236
+    - rid: 8814626630200984235
+      type: {class: InputElementProvider_UIT_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 
+    - rid: 8814626630200984236
+      type: {class: InputElementProvider_UGUI_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 

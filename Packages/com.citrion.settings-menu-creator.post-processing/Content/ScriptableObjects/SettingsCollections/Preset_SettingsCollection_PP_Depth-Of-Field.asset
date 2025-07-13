@@ -1,0 +1,250 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae6bbc263dffee45a6068e3f02a825b, type: 3}
+  m_Name: Preset_SettingsCollection_PP_Depth-Of-Field
+  m_EditorClassIdentifier: 
+  identifier: 
+  settings:
+  - applyImmediately: 1
+    identifier: depth-of-field-active
+    expanded: 0
+    overrideIdentifierWhenCopied: 0
+    setting:
+      rid: 7116012322165096562
+    inputElementProviderSettings:
+      rid: 8814626630397853782
+  - applyImmediately: 1
+    identifier: depth-of-field-enabled
+    expanded: 0
+    overrideIdentifierWhenCopied: 0
+    setting:
+      rid: 7116012322165096563
+    inputElementProviderSettings:
+      rid: 8814626630397853787
+  - applyImmediately: 1
+    identifier: depth-of-field-focus-distance
+    expanded: 0
+    overrideIdentifierWhenCopied: 0
+    setting:
+      rid: 7116012322165097121
+    inputElementProviderSettings:
+      rid: 8814626630397853792
+  - applyImmediately: 1
+    identifier: depth-of-field-aperture
+    expanded: 0
+    overrideIdentifierWhenCopied: 0
+    setting:
+      rid: 7116012322165097122
+    inputElementProviderSettings:
+      rid: 8814626630397853797
+  - applyImmediately: 1
+    identifier: depth-of-field-focal-length
+    expanded: 0
+    overrideIdentifierWhenCopied: 0
+    setting:
+      rid: 7116012322165097123
+    inputElementProviderSettings:
+      rid: 8814626630397853802
+  - applyImmediately: 1
+    identifier: depth-of-field-max-blur-size
+    expanded: 0
+    overrideIdentifierWhenCopied: 0
+    setting:
+      rid: 7116012322165096662
+    inputElementProviderSettings:
+      rid: 8814626630397853807
+  settingsSaver: {fileID: 0}
+  inputTemplatesUIToolkit: {fileID: 0}
+  inputTemplatesUGUI: {fileID: 0}
+  audioMixer: {fileID: 0}
+  postProcessProfile: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: 7116012322165096562
+      type: {class: Setting_DepthOfFieldActive, ns: CitrioN.SettingsMenuCreator.PostProcessing, asm: CitrioN.SettingsMenuCreator.PostProcessing}
+      data:
+        options:
+        - key: True
+          value: True
+        - key: False
+          value: False
+        defaultValue: 1
+        assignUnityValueAsDefault: 0
+        profileOverride: {fileID: 0}
+    - rid: 7116012322165096563
+      type: {class: Setting_DepthOfFieldEnabled, ns: CitrioN.SettingsMenuCreator.PostProcessing, asm: CitrioN.SettingsMenuCreator.PostProcessing}
+      data:
+        options:
+        - key: True
+          value: True
+        - key: False
+          value: False
+        defaultValue: 1
+        assignUnityValueAsDefault: 0
+        profileOverride: {fileID: 0}
+    - rid: 7116012322165096662
+      type: {class: Setting_DepthOfFieldMaxBlurSize, ns: CitrioN.SettingsMenuCreator.PostProcessing, asm: CitrioN.SettingsMenuCreator.PostProcessing}
+      data:
+        options:
+        - key: Small
+          value: Small
+        - key: Medium
+          value: Medium
+        - key: Large
+          value: Large
+        - key: VeryLarge
+          value: Very Large
+        defaultValue: 1
+        assignUnityValueAsDefault: 0
+        profileOverride: {fileID: 0}
+    - rid: 7116012322165097121
+      type: {class: Setting_DepthOfFieldFocusDistance, ns: CitrioN.SettingsMenuCreator.PostProcessing, asm: CitrioN.SettingsMenuCreator.PostProcessing}
+      data:
+        options:
+        - key: MIN_RANGE
+          value: 0.1
+        - key: MAX_RANGE
+          value: 200
+        - key: STEP_SIZE
+          value: 0.1
+        defaultValue: 10
+        assignUnityValueAsDefault: 0
+        profileOverride: {fileID: 0}
+    - rid: 7116012322165097122
+      type: {class: Setting_DepthOfFieldAperture, ns: CitrioN.SettingsMenuCreator.PostProcessing, asm: CitrioN.SettingsMenuCreator.PostProcessing}
+      data:
+        options:
+        - key: MIN_RANGE
+          value: 0.1
+        - key: MAX_RANGE
+          value: 32
+        - key: STEP_SIZE
+          value: 0.1
+        defaultValue: 5.6
+        assignUnityValueAsDefault: 0
+        profileOverride: {fileID: 0}
+    - rid: 7116012322165097123
+      type: {class: Setting_DepthOfFieldFocalLength, ns: CitrioN.SettingsMenuCreator.PostProcessing, asm: CitrioN.SettingsMenuCreator.PostProcessing}
+      data:
+        options:
+        - key: MIN_RANGE
+          value: 1
+        - key: MAX_RANGE
+          value: 300
+        - key: STEP_SIZE
+          value: 1
+        defaultValue: 50
+        assignUnityValueAsDefault: 0
+        profileOverride: {fileID: 0}
+    - rid: 8814626630397853782
+      type: {class: InputElementProviderSettings, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data:
+        customLabel: 
+        parentIdentifier: settings-parent
+        addSpacer: 1
+        spacerElementClass: setting-spacer
+        inputElementProvider_UIToolkit:
+          rid: 8814626630397853784
+        inputElementProvider_UGUI:
+          rid: 8814626630397853785
+    - rid: 8814626630397853784
+      type: {class: InputElementProvider_UIT_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 
+    - rid: 8814626630397853785
+      type: {class: InputElementProvider_UGUI_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 
+    - rid: 8814626630397853787
+      type: {class: InputElementProviderSettings, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data:
+        customLabel: 
+        parentIdentifier: settings-parent
+        addSpacer: 1
+        spacerElementClass: setting-spacer
+        inputElementProvider_UIToolkit:
+          rid: 8814626630397853789
+        inputElementProvider_UGUI:
+          rid: 8814626630397853790
+    - rid: 8814626630397853789
+      type: {class: InputElementProvider_UIT_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 
+    - rid: 8814626630397853790
+      type: {class: InputElementProvider_UGUI_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 
+    - rid: 8814626630397853792
+      type: {class: InputElementProviderSettings, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data:
+        customLabel: 
+        parentIdentifier: settings-parent
+        addSpacer: 1
+        spacerElementClass: setting-spacer
+        inputElementProvider_UIToolkit:
+          rid: 8814626630397853794
+        inputElementProvider_UGUI:
+          rid: 8814626630397853795
+    - rid: 8814626630397853794
+      type: {class: InputElementProvider_UIT_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 
+    - rid: 8814626630397853795
+      type: {class: InputElementProvider_UGUI_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 
+    - rid: 8814626630397853797
+      type: {class: InputElementProviderSettings, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data:
+        customLabel: 
+        parentIdentifier: settings-parent
+        addSpacer: 1
+        spacerElementClass: setting-spacer
+        inputElementProvider_UIToolkit:
+          rid: 8814626630397853799
+        inputElementProvider_UGUI:
+          rid: 8814626630397853800
+    - rid: 8814626630397853799
+      type: {class: InputElementProvider_UIT_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 
+    - rid: 8814626630397853800
+      type: {class: InputElementProvider_UGUI_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 
+    - rid: 8814626630397853802
+      type: {class: InputElementProviderSettings, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data:
+        customLabel: 
+        parentIdentifier: settings-parent
+        addSpacer: 1
+        spacerElementClass: setting-spacer
+        inputElementProvider_UIToolkit:
+          rid: 8814626630397853804
+        inputElementProvider_UGUI:
+          rid: 8814626630397853805
+    - rid: 8814626630397853804
+      type: {class: InputElementProvider_UIT_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 
+    - rid: 8814626630397853805
+      type: {class: InputElementProvider_UGUI_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 
+    - rid: 8814626630397853807
+      type: {class: InputElementProviderSettings, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data:
+        customLabel: 
+        parentIdentifier: settings-parent
+        addSpacer: 1
+        spacerElementClass: setting-spacer
+        inputElementProvider_UIToolkit:
+          rid: 8814626630397853809
+        inputElementProvider_UGUI:
+          rid: 8814626630397853810
+    - rid: 8814626630397853809
+      type: {class: InputElementProvider_UIT_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 
+    - rid: 8814626630397853810
+      type: {class: InputElementProvider_UGUI_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 

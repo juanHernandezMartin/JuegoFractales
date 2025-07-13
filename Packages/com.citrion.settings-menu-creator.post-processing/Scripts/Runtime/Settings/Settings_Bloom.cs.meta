@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 6f2a6c0767c5fbc4db8c1e573be32fe1
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 269529
+  packageName: Settings & Options Menu Creator - Built-In Post Processing Addon
+  packageVersion: 1.1.0
+  assetPath: Packages/com.citrion.settings-menu-creator.post-processing/Scripts/Runtime/Settings/Settings_Bloom.cs
+  uploadId: 689180

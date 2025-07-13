@@ -1,0 +1,322 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae6bbc263dffee45a6068e3f02a825b, type: 3}
+  m_Name: Preset_SettingsCollection_PP_Auto-Exposure
+  m_EditorClassIdentifier: 
+  identifier: 
+  settings:
+  - applyImmediately: 1
+    identifier: auto-exposure-active
+    expanded: 0
+    overrideIdentifierWhenCopied: 0
+    setting:
+      rid: 7116012322165096873
+    inputElementProviderSettings:
+      rid: 7116012322165096802
+  - applyImmediately: 1
+    identifier: auto-exposure-enabled
+    expanded: 0
+    overrideIdentifierWhenCopied: 0
+    setting:
+      rid: 7116012322165096803
+    inputElementProviderSettings:
+      rid: 7116012322165096804
+  - applyImmediately: 1
+    identifier: auto-exposure-min-luminance
+    expanded: 0
+    overrideIdentifierWhenCopied: 0
+    setting:
+      rid: 7116012322165097100
+    inputElementProviderSettings:
+      rid: 7116012322165096806
+  - applyImmediately: 1
+    identifier: auto-exposure-max-luminance
+    expanded: 0
+    overrideIdentifierWhenCopied: 0
+    setting:
+      rid: 7116012322165097101
+    inputElementProviderSettings:
+      rid: 7116012322165096808
+  - applyImmediately: 1
+    identifier: auto-exposure-key-value
+    expanded: 0
+    overrideIdentifierWhenCopied: 0
+    setting:
+      rid: 7116012322165097102
+    inputElementProviderSettings:
+      rid: 7116012322165096810
+  - applyImmediately: 1
+    identifier: auto-exposure-eye-adaptation
+    expanded: 0
+    overrideIdentifierWhenCopied: 0
+    setting:
+      rid: 7116012322165096811
+    inputElementProviderSettings:
+      rid: 7116012322165096812
+  - applyImmediately: 1
+    identifier: auto-exposure-adaptation-speed-up
+    expanded: 0
+    overrideIdentifierWhenCopied: 0
+    setting:
+      rid: 7116012322165097103
+    inputElementProviderSettings:
+      rid: 7116012322165096814
+  - applyImmediately: 1
+    identifier: auto-exposure-adaptation-speed-down
+    expanded: 0
+    overrideIdentifierWhenCopied: 0
+    setting:
+      rid: 7116012322165097104
+    inputElementProviderSettings:
+      rid: 7116012322165096816
+  settingsSaver: {fileID: 0}
+  inputTemplatesUIToolkit: {fileID: 0}
+  inputTemplatesUGUI: {fileID: 0}
+  audioMixer: {fileID: 0}
+  postProcessProfile: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: 7116012322165096802
+      type: {class: InputElementProviderSettings, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data:
+        customLabel: 
+        parentIdentifier: settings-parent
+        addSpacer: 1
+        spacerElementClass: setting-spacer
+        inputElementProvider_UIToolkit:
+          rid: 7116012322165096817
+        inputElementProvider_UGUI:
+          rid: 7116012322165096818
+    - rid: 7116012322165096803
+      type: {class: Setting_AutoExposureEnabled, ns: CitrioN.SettingsMenuCreator.PostProcessing, asm: CitrioN.SettingsMenuCreator.PostProcessing}
+      data:
+        options:
+        - key: True
+          value: True
+        - key: False
+          value: False
+        defaultValue: 1
+        assignUnityValueAsDefault: 0
+        profileOverride: {fileID: 0}
+    - rid: 7116012322165096804
+      type: {class: InputElementProviderSettings, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data:
+        customLabel: 
+        parentIdentifier: settings-parent
+        addSpacer: 1
+        spacerElementClass: setting-spacer
+        inputElementProvider_UIToolkit:
+          rid: 7116012322165096819
+        inputElementProvider_UGUI:
+          rid: 7116012322165096820
+    - rid: 7116012322165096806
+      type: {class: InputElementProviderSettings, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data:
+        customLabel: 
+        parentIdentifier: settings-parent
+        addSpacer: 1
+        spacerElementClass: setting-spacer
+        inputElementProvider_UIToolkit:
+          rid: 7116012322165096821
+        inputElementProvider_UGUI:
+          rid: 7116012322165096822
+    - rid: 7116012322165096808
+      type: {class: InputElementProviderSettings, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data:
+        customLabel: 
+        parentIdentifier: settings-parent
+        addSpacer: 1
+        spacerElementClass: setting-spacer
+        inputElementProvider_UIToolkit:
+          rid: 7116012322165096823
+        inputElementProvider_UGUI:
+          rid: 7116012322165096824
+    - rid: 7116012322165096810
+      type: {class: InputElementProviderSettings, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data:
+        customLabel: 
+        parentIdentifier: settings-parent
+        addSpacer: 1
+        spacerElementClass: setting-spacer
+        inputElementProvider_UIToolkit:
+          rid: 7116012322165096825
+        inputElementProvider_UGUI:
+          rid: 7116012322165096826
+    - rid: 7116012322165096811
+      type: {class: Setting_AutoExposureEyeAdaptation, ns: CitrioN.SettingsMenuCreator.PostProcessing, asm: CitrioN.SettingsMenuCreator.PostProcessing}
+      data:
+        options:
+        - key: Progressive
+          value: Progressive
+        - key: Fixed
+          value: Fixed
+        defaultValue: 0
+        assignUnityValueAsDefault: 0
+        profileOverride: {fileID: 0}
+    - rid: 7116012322165096812
+      type: {class: InputElementProviderSettings, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data:
+        customLabel: 
+        parentIdentifier: settings-parent
+        addSpacer: 1
+        spacerElementClass: setting-spacer
+        inputElementProvider_UIToolkit:
+          rid: 7116012322165096827
+        inputElementProvider_UGUI:
+          rid: 7116012322165096828
+    - rid: 7116012322165096814
+      type: {class: InputElementProviderSettings, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data:
+        customLabel: 
+        parentIdentifier: settings-parent
+        addSpacer: 1
+        spacerElementClass: setting-spacer
+        inputElementProvider_UIToolkit:
+          rid: 7116012322165096829
+        inputElementProvider_UGUI:
+          rid: 7116012322165096830
+    - rid: 7116012322165096816
+      type: {class: InputElementProviderSettings, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data:
+        customLabel: 
+        parentIdentifier: settings-parent
+        addSpacer: 1
+        spacerElementClass: setting-spacer
+        inputElementProvider_UIToolkit:
+          rid: 7116012322165096831
+        inputElementProvider_UGUI:
+          rid: 7116012322165096832
+    - rid: 7116012322165096817
+      type: {class: InputElementProvider_UIT_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 
+    - rid: 7116012322165096818
+      type: {class: InputElementProvider_UGUI_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 
+    - rid: 7116012322165096819
+      type: {class: InputElementProvider_UIT_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 
+    - rid: 7116012322165096820
+      type: {class: InputElementProvider_UGUI_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 
+    - rid: 7116012322165096821
+      type: {class: InputElementProvider_UIT_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 
+    - rid: 7116012322165096822
+      type: {class: InputElementProvider_UGUI_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 
+    - rid: 7116012322165096823
+      type: {class: InputElementProvider_UIT_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 
+    - rid: 7116012322165096824
+      type: {class: InputElementProvider_UGUI_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 
+    - rid: 7116012322165096825
+      type: {class: InputElementProvider_UIT_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 
+    - rid: 7116012322165096826
+      type: {class: InputElementProvider_UGUI_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 
+    - rid: 7116012322165096827
+      type: {class: InputElementProvider_UIT_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 
+    - rid: 7116012322165096828
+      type: {class: InputElementProvider_UGUI_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 
+    - rid: 7116012322165096829
+      type: {class: InputElementProvider_UIT_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 
+    - rid: 7116012322165096830
+      type: {class: InputElementProvider_UGUI_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 
+    - rid: 7116012322165096831
+      type: {class: InputElementProvider_UIT_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 
+    - rid: 7116012322165096832
+      type: {class: InputElementProvider_UGUI_None, ns: CitrioN.SettingsMenuCreator, asm: CitrioN.SettingsMenuCreator}
+      data: 
+    - rid: 7116012322165096873
+      type: {class: Setting_AutoExposureActive, ns: CitrioN.SettingsMenuCreator.PostProcessing, asm: CitrioN.SettingsMenuCreator.PostProcessing}
+      data:
+        options:
+        - key: True
+          value: True
+        - key: False
+          value: False
+        defaultValue: 1
+        assignUnityValueAsDefault: 0
+        profileOverride: {fileID: 0}
+    - rid: 7116012322165097100
+      type: {class: Setting_AutoExposureMinLuminance, ns: CitrioN.SettingsMenuCreator.PostProcessing, asm: CitrioN.SettingsMenuCreator.PostProcessing}
+      data:
+        options:
+        - key: MIN_RANGE
+          value: -9
+        - key: MAX_RANGE
+          value: 9
+        - key: STEP_SIZE
+          value: 0.1
+        defaultValue: 0
+        assignUnityValueAsDefault: 0
+        profileOverride: {fileID: 0}
+    - rid: 7116012322165097101
+      type: {class: Setting_AutoExposureMaxLuminance, ns: CitrioN.SettingsMenuCreator.PostProcessing, asm: CitrioN.SettingsMenuCreator.PostProcessing}
+      data:
+        options:
+        - key: MIN_RANGE
+          value: -9
+        - key: MAX_RANGE
+          value: 9
+        - key: STEP_SIZE
+          value: 0.1
+        defaultValue: 0
+        assignUnityValueAsDefault: 0
+        profileOverride: {fileID: 0}
+    - rid: 7116012322165097102
+      type: {class: Setting_AutoExposureCompensation, ns: CitrioN.SettingsMenuCreator.PostProcessing, asm: CitrioN.SettingsMenuCreator.PostProcessing}
+      data:
+        options:
+        - key: MIN_RANGE
+          value: 0.01
+        - key: MAX_RANGE
+          value: 2
+        - key: STEP_SIZE
+          value: 0.01
+        defaultValue: 1
+        assignUnityValueAsDefault: 0
+        profileOverride: {fileID: 0}
+    - rid: 7116012322165097103
+      type: {class: Setting_AutoExposureAdaptationSpeedUp, ns: CitrioN.SettingsMenuCreator.PostProcessing, asm: CitrioN.SettingsMenuCreator.PostProcessing}
+      data:
+        options:
+        - key: MIN_RANGE
+          value: 0
+        - key: MAX_RANGE
+          value: 10
+        - key: STEP_SIZE
+          value: 0.1
+        defaultValue: 2
+        assignUnityValueAsDefault: 0
+        profileOverride: {fileID: 0}
+    - rid: 7116012322165097104
+      type: {class: Setting_AutoExposureAdaptationSpeedDown, ns: CitrioN.SettingsMenuCreator.PostProcessing, asm: CitrioN.SettingsMenuCreator.PostProcessing}
+      data:
+        options:
+        - key: MIN_RANGE
+          value: 0
+        - key: MAX_RANGE
+          value: 10
+        - key: STEP_SIZE
+          value: 0.1
+        defaultValue: 1
+        assignUnityValueAsDefault: 0
+        profileOverride: {fileID: 0}

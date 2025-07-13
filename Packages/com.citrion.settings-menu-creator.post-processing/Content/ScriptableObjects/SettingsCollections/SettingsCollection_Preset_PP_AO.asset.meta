@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3d1631e0368d6bc4a93c5446d1554631
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 269529
+  packageName: Settings & Options Menu Creator - Built-In Post Processing Addon
+  packageVersion: 1.1.0
+  assetPath: Packages/com.citrion.settings-menu-creator.post-processing/Content/ScriptableObjects/SettingsCollections/SettingsCollection_Preset_PP_AO.asset
+  uploadId: 689180

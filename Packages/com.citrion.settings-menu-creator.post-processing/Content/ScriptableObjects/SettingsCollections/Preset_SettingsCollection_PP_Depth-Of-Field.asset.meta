@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 06d2318a3d8c3b44693ec51ae03a673d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 269529
+  packageName: Settings & Options Menu Creator - Built-In Post Processing Addon
+  packageVersion: 1.1.0
+  assetPath: Packages/com.citrion.settings-menu-creator.post-processing/Content/ScriptableObjects/SettingsCollections/Preset_SettingsCollection_PP_Depth-Of-Field.asset
+  uploadId: 689180

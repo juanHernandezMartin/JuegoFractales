@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 5f924c076f88ea84eb4bc7dd92052462
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 269529
+  packageName: Settings & Options Menu Creator - Built-In Post Processing Addon
+  packageVersion: 1.1.0
+  assetPath: Packages/com.citrion.settings-menu-creator.post-processing/Scripts/Editor/CitrioN.SettingsMenuCreator.PostProcessing.Editor.asmdef
+  uploadId: 689180
