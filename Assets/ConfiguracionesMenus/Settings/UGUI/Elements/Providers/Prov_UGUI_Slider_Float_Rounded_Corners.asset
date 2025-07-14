@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0963174ecee372b4c8aaaccfd3ec7146, type: 3}
+  m_Name: Prov_UGUI_Slider_Float_Rounded_Corners
+  m_EditorClassIdentifier: 
+  prefabs:
+  - {fileID: 8314299659727386830, guid: 6c6c70a020de0f14b83cac8c09bfa44b, type: 3}
+  - {fileID: 7067439724309090335, guid: 64f0fc4d01cf8e54183e0e668d5ae009, type: 3}
+  minSliderValue: 2
+  maxSliderValue: 2
+  direction: 0
