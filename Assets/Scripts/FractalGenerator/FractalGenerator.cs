@@ -22,19 +22,13 @@ public class FractalGenerator : MonoBehaviour
 
             Transform childTransform = fractalToGenerate.childrenTransforms[i];
 
-            //Vector3 position = currFractalModel.transform.position;
-            //position.x = childTransform.localPosition.x * currFractalModel.transform.localScale.x + currFractalModel.transform.position.x;
-            //position.y = childTransform.localPosition.y * currFractalModel.transform.localScale.y + currFractalModel.transform.position.y;
-            //position.z = childTransform.localPosition.z * currFractalModel.transform.localScale.z + currFractalModel.transform.position.z;
-            //newFractalModel.transform.position = position;
-
             newFractalModel.transform.Translate(childTransform.localPosition * currFractalModel.transform.localScale.x);
             newFractalModel.transform.Rotate(childTransform.localRotation.eulerAngles);
 
             Vector3 scale = currFractalModel.transform.localScale;
             scale.x *= childTransform.localScale.x;
-            scale.y *= childTransform.localScale.y;
-            scale.z *= childTransform.localScale.z;
+            //scale.y *= childTransform.localScale.y;
+            //scale.z *= childTransform.localScale.z;
             newFractalModel.transform.localScale = scale;
 
             newFractalModel.transform.SetParent(transform);
