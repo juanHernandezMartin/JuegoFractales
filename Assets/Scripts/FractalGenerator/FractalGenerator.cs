@@ -11,20 +11,35 @@ public class FractalGenerator : MonoBehaviour
     public List<float> rotationFactors = new();
     public List<Vector3> positionFactors = new();
 
+    public GameObject Childs;
+    public GameObject resetButton;
+    public GameObject hideUI;
+
     private bool isInitialized = false;
+
+    
+    public SpriteRenderer leftSpriteRenderer;
+    public SpriteRenderer rightSpriteRenderer;
+    public SpriteRenderer centerSpriteRenderer;
+    public Color fractalColor;
+    private Color originalColor;
+    private Color originalLeftColor;
+    private Color originalRightColor;
 
     void Start()
     {
         fractalsByDepth.Add(new List<GameObject>());
         fractalsByDepth[0].Add(fractalToGenerate.model);
-
+        originalColor = centerSpriteRenderer.color;
+        originalLeftColor = leftSpriteRenderer.color;
+        originalRightColor = rightSpriteRenderer.color;
     }
 
     public void ReproduceFractal(GameObject currFractalModel)
     {
         currFractalModel.GetComponent<FractalScriptDisabler>().EnableFractalScripts();
 
-        for (int i = 0; i < fractalToGenerate.childrenTransforms.Count; i++)
+        for (int i = 0; i < fractalToGenerate.ActiveChildren.Count; i++)
         {
             GameObject newFractalModel = Instantiate(currFractalModel);
 
@@ -61,26 +76,52 @@ public class FractalGenerator : MonoBehaviour
 
     public void GenerateFractal()
     {
+        resetButton.SetActive(true);
+
+        if (fractalToGenerate.ActiveChildren.Count == 0)
+        {
+            resetButton.SetActive(false);
+            return;
+        }
+
+        hideUI.SetActive(true);
+
+        centerSpriteRenderer.color = fractalColor;
+        leftSpriteRenderer.color = fractalColor;
+        rightSpriteRenderer.color = fractalColor;
+        
         if (!isInitialized)
         {
             InitiazeFactors();
             isInitialized = true;
         }
 
-        fractalToGenerate.model.GetComponent<FractalScriptDisabler>().EnableFractalScripts();
+        int maxDepth = GetMaxDepth();
 
-        fractalsByDepth.Add(new List<GameObject>());
-        int numberOfFractalsToGenerate = fractalsByDepth[fractalsByDepth.Count - 2].Count;
-        print("Number of fractals to generate: " + numberOfFractalsToGenerate);
-        for (int currFractalModel = 0; currFractalModel < numberOfFractalsToGenerate; currFractalModel++)
+        Childs.SetActive(false);
+
+        for (int i = 0; i < maxDepth; i++)
         {
-            ReproduceFractal(fractalsByDepth[fractalsByDepth.Count - 2][currFractalModel]);
+            fractalToGenerate.model.GetComponent<FractalScriptDisabler>().EnableFractalScripts();
+
+            fractalsByDepth.Add(new List<GameObject>());
+            int numberOfFractalsToGenerate = fractalsByDepth[fractalsByDepth.Count - 2].Count;
+            print("Number of fractals to generate: " + numberOfFractalsToGenerate);
+            for (int currFractalModel = 0; currFractalModel < numberOfFractalsToGenerate; currFractalModel++)
+            {
+                ReproduceFractal(fractalsByDepth[fractalsByDepth.Count - 2][currFractalModel]);
+            }
         }
     }
 
 
     public void ResetFractal()
     {
+        hideUI.SetActive(false);
+        centerSpriteRenderer.color = originalColor;
+        leftSpriteRenderer.color = originalLeftColor;
+        rightSpriteRenderer.color = originalRightColor;
+        Childs.SetActive(true);
         for (int i = 0; i < fractalsByDepth.Count; i++)
         {
             foreach (GameObject fractal in fractalsByDepth[i])
@@ -100,6 +141,8 @@ public class FractalGenerator : MonoBehaviour
         scaleFactors.Clear();
         rotationFactors.Clear();
         positionFactors.Clear();
+
+        resetButton.SetActive(false);
     }
 
 
@@ -110,9 +153,9 @@ public class FractalGenerator : MonoBehaviour
         float fatherScale = fractalToGenerate.model.GetComponent<RefenceToHandlerJoiner>().handlerJoiner.localScale.x;
 
 
-        for (int i = 0; i < fractalToGenerate.childrenTransforms.Count; i++)
+        for (int i = 0; i < fractalToGenerate.ActiveChildren.Count; i++)
         {
-            Transform childTransform = fractalToGenerate.childrenTransforms[i];
+            Transform childTransform = fractalToGenerate.ActiveChildren[i];
 
             Vector3 localChildPosition = childTransform.position;
             Vector3 positionFactor = new Vector3(
@@ -131,5 +174,28 @@ public class FractalGenerator : MonoBehaviour
             float scaleFactor = localScaleChild / fatherScale;
             scaleFactors.Add(scaleFactor);
         }
+    }
+
+    private int GetMaxDepth()
+    {
+        int maxDepth = 0;
+
+        switch (fractalToGenerate.ActiveChildren.Count)
+        {
+            case 1:
+                maxDepth = 80;
+                break;
+            case 2:
+                maxDepth = 11;
+                break;
+            case 3:
+                maxDepth = 7;
+                break;
+            case 4:
+                maxDepth = 5;
+                break;
+        }
+
+        return maxDepth;
     }
 }
